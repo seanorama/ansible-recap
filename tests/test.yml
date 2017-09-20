@@ -1,5 +1,5 @@
 ---
 - hosts: all
-  ansible_become_user: root
+  become: true
   roles:
     - seanorama.ansible-recap

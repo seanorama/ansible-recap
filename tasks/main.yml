@@ -12,22 +12,22 @@
   with_items: recap
   when: ansible_os_family|lower == "redhat"
 
-- name: Enable recap features
-  ini_file:
-    path: /etc/recap
-    section: null
-    option: "{{ item[0] }}"
-    value: "{{ item[1] }}"
-    backup: yes
-    no_extra_spaces: yes
-  with_nested:
-    - [ 'USESAR', 'yes' ]
-    - [ 'USESARR', 'yes' ]
-    - [ 'USESARQ', 'yes' ]
-    - [ 'USENETSTATSUM', 'yes' ]
-    - [ 'USEDF', 'yes' ]
-    - [ 'USESLAB', 'yes' ]
-    - [ 'USEFDISK', 'yes' ]
+#- name: Enable recap features
+  #ini_file:
+    #path: /etc/recap
+    #section: null
+    #option: "{{ item[0] }}"
+    #value: "{{ item[1] }}"
+    #backup: yes
+    #no_extra_spaces: yes
+  #with_nested:
+    #- [ 'USESAR', 'yes' ]
+    #- [ 'USESARR', 'yes' ]
+    #- [ 'USESARQ', 'yes' ]
+    #- [ 'USENETSTATSUM', 'yes' ]
+    #- [ 'USEDF', 'yes' ]
+    #- [ 'USESLAB', 'yes' ]
+    #- [ 'USEFDISK', 'yes' ]
 
 - name: Run recap once
   command: recap
