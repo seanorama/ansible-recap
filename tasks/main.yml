@@ -16,8 +16,8 @@
   ini_file:
     path: /etc/recap
     section: null
-    option: {{ item[0] }}
-    value: {{ item[1] }}
+    option: "{{ item[0] }}"
+    value: "{{ item[1] }}"
     backup: yes
     no_extra_spaces: yes
   with_nested:
