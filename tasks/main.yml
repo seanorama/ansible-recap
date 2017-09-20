@@ -12,10 +12,10 @@
   with_items: recap
   when: ansible_os_family|lower == "redhat"
 
-- name: Enable recap features
+#- name: Enable recap features
 
-- name: Run recap once
+#- name: Run recap once
 
-- name: Schedule additional recaps in cron
+#- name: Schedule additional recaps in cron
 
 
