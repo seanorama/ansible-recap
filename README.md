@@ -1,7 +1,7 @@
-Role Name
+recap
 =========
 
-Install & Configure [recap](https://github.com/rackerlabs/recap/)
+Ansible role to install & configure [recap](https://github.com/rackerlabs/recap/)
 
 Requirements
 ------------
