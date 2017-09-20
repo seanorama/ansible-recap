@@ -1,0 +1,21 @@
+---
+# tasks file for ansible-recap
+
+- name: Fail if not RedHat OS family
+  fail:
+    msg: "Recap packages are only available in EPEL for the RedHat OS Family"
+  when: ansible_os_family|lower != "redhat"
+
+- name: Install required packages
+  action: >
+    {{ ansible_pkg_mgr }} name={{ item }} state=latest update_cache=yes
+  with_items: recap
+  when: ansible_os_family|lower == "redhat"
+
+- name: Enable recap features
+
+- name: Run recap once
+
+- name: Schedule additional recaps in cron
+
+
