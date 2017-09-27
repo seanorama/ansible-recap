@@ -30,7 +30,7 @@
     #- [ 'USEFDISK', 'yes' ]
 
 - name: Run recap once
-  command: recap
+  command: /usr/sbin/recap
 
 #- name: Schedule additional recaps in cron
 
