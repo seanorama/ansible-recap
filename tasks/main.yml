@@ -29,9 +29,6 @@
     #- [ 'USESLAB', 'yes' ]
     #- [ 'USEFDISK', 'yes' ]
 
-- name: Run recap once
-  command: /usr/sbin/recap
-
 #- name: Schedule additional recaps in cron
 
 
